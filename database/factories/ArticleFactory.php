@@ -20,6 +20,7 @@ class ArticleFactory extends Factory
             'image' => $this->faker->image(),
             'is_valid' => $this->faker->boolean(),
             'user_id' => random_int(2, 200),
+            'posted_at' => $this->faker->dateTimeThisDecade(),
         ];
     }
 }

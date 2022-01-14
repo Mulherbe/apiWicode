@@ -21,6 +21,7 @@ class CreateArticlesTable extends Migration
             $table->text('image');
             $table->boolean('is_valid');
             $table->softDeletes();
+            $table->timestamp('posted_at');
             $table->timestamps();
             // foreign
             $table->unsignedBigInteger('user_id');
